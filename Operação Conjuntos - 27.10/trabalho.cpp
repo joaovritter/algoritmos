@@ -25,9 +25,9 @@ Conjunto uniaoConjunto(const Conjunto& conjunto1, const Conjunto& conjunto2) {
 // Função para calcular a interseção de dois conjuntos
 Conjunto intersecaoConjunto(const Conjunto& conjunto1, const Conjunto& conjunto2) {
     Conjunto resultado;
-    for (auto elemento : conjunto1) {
-        if (conjunto2.find(elemento) != conjunto2.end()) {
-            resultado.insert(elemento);
+    for (auto elemento : conjunto1) { // Itera sobre os elementos do conjunto1
+        if (conjunto2.find(elemento) != conjunto2.end()) { // se o elemento estiver presente em conjunto2, o elemento é comum a ambos os conjuntos
+            resultado.insert(elemento); 
         }
     }
     return resultado;
